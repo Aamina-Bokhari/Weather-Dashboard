@@ -332,13 +332,18 @@ table th, table td {
         z-index: 10; /* Ensure it stays on top of other content */
         margin-top : -5px;
     }
-    .search-bar button,.unit-toggle button {
+     .unit-toggle button {
         margin-left: 10px; 
         padding: 5px 10px;
         margin-top: -8px;
         border-radius: 8px;/* Space between unit toggle and search bar */
     }
-    
+    @media (max-width: 768px) {
+     .unit-toggle button,
+    .search-bar button {
+        padding: 5px 10px; /* Reduce padding for smaller size */
+        font-size: 12px;    /* Decrease font size */
+    }
     .search-bar input {
         flex-grow: 1;       /* Allow input to take up remaining space */
     }
