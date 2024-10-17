@@ -120,7 +120,10 @@ header {
     border-radius: 12px;
 }
 
-
+.search-bar {
+    display: flex;
+    align-items: center;
+}
 
 .search-bar input {
     padding: 10px;
@@ -332,10 +335,11 @@ table th, table td {
         z-index: 10; /* Ensure it stays on top of other content */
         margin-top : -5px;
     }
-     * Space between unit toggle and search bar */
+    .unit-toggle button {
+        margin-left: 10px; 
+        margin-top: -8px;
+        border-radius: 8px;/* Space between unit toggle and search bar */
     }
-    @media (max-width: 768px) {
-    
     
     .search-bar input {
         flex-grow: 1;       /* Allow input to take up remaining space */
