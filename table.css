@@ -339,7 +339,7 @@ table th, table td {
         border-radius: 8px;/* Space between unit toggle and search bar */
     }
     @media (max-width: 768px) {
-     .unit-toggle button,
+    
     .search-bar button {
         padding: 5px 10px; /* Reduce padding for smaller size */
         font-size: 12px;    /* Decrease font size */
