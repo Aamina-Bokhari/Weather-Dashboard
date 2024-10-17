@@ -340,10 +340,7 @@ table th, table td {
     }
     @media (max-width: 768px) {
     
-    .search-bar button {
-        padding: 5px 10px; /* Reduce padding for smaller size */
-        font-size: 12px;    /* Decrease font size */
-    }
+    
     .search-bar input {
         flex-grow: 1;       /* Allow input to take up remaining space */
     }
