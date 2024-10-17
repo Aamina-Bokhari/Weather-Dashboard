@@ -158,6 +158,7 @@ function getBackgroundImage(condition) {
         case 'snow':
             return 'url("snow.jpg")';
         case 'mist':
+      case: 'smoke'
         case 'haze':
             return 'url("mist.jpg")';
         default:
