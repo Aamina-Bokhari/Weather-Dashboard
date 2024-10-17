@@ -259,3 +259,101 @@ table th, table td {
         width: 100%;
     }
 }
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        padding: 10px; /* Adjust padding for mobile */
+    }
+
+    .logo {
+        height: 80px; /* Adjust logo height */
+    }
+
+    header {
+        flex-direction: column; /* Stack header elements */
+        align-items: flex-start; /* Align items to the left */
+        padding: 10px; /* Adjust padding for mobile */
+    }
+
+    .search-bar {
+        width: 100%;
+        margin-bottom: 10px; /* Space below search bar */
+    }
+
+    .search-bar input {
+        width: calc(100% - 80px); /* Adjust input width */
+    }
+
+    .unit-toggle {
+        margin-left: 0; /* Reset margin for mobile */
+        margin-top: 5x; /* Move unit button up */
+        margin-bottom: -6px;
+    }
+
+    .table-chatbot-container {
+        flex-direction: column; /* Stack table and chatbot */
+    }
+
+    .table-section,
+    .chatbot-section {
+        width: 100%; /* Full width for both sections */
+        margin-bottom: 20px; /* Space between sections */
+    }
+
+    .chatbox {
+        flex-direction: column; /* Stack chatbox items */
+        width: 100%; /* Full width for chatbox */
+    }
+
+    .chatbox input {
+        margin-bottom: 10px; /* Space below input */
+    }
+
+    .chatbox button {
+        width: 100%; /* Full width for button */
+    }
+}
+@media (max-width: 768px) {
+    .user-profile {
+        position: absolute;
+        top: 20px;  /* Distance from the top of the page */
+        left: 20px; /* Distance from the left side of the page */
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: var(--accent-color);
+        text-align: center;
+        color: white;
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 10; /* Ensure it stays on top of other content */
+        margin-top : -5px;
+    }
+    .unit-toggle button {
+        margin-left: 10px; 
+        margin-top: -8px;
+        border-radius: 8px;/* Space between unit toggle and search bar */
+    }
+    
+    .search-bar input {
+        flex-grow: 1;       /* Allow input to take up remaining space */
+    }
+    .table-controls {
+        flex-wrap: wrap; /* Allow buttons to wrap onto the next line */
+        justify-content: flex-start; /* Align buttons to the left */
+        margin-top: 10px; /* Space above the controls */
+        gap: 10px; /* Space between buttons */
+    }
+
+    .table-controls button {
+        padding: 8px; /* Adjust button padding for smaller screens */
+        flex: 1 1 auto; /* Allow buttons to grow and shrink */
+        min-width: 100px; /* Set a minimum width for buttons */
+    }
+}
